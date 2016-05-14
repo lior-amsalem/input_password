@@ -21,4 +21,4 @@ Baisc React.js input password with cool features.
 
 **Basic:**
 
-![alt tag](examples/screenshot-basic.png)
+![alt tag](examples/screenshot-basic.jpg)
