@@ -1,20 +1,20 @@
 var path = require('path');
-    webpack = require('webpack'),
-    localhost = 'http://localhost:3334',
-    hotMiddlewareEntry = 'webpack-hot-middleware/client?path=' + localhost + '/__webpack_hmr';
+    webpack = require('webpack');
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
     entry: {
         index: [
-            './examples/basic',
+            './src/input_password',
             'react',
             'react-dom'
         ]
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: '[name].js'
+        filename: '[name].js',
+        library: "react-input-password",
+        libraryTarget: "umd"
     },
     module: {
         loaders: [{

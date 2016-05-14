@@ -7,10 +7,11 @@
   "scripts": {
     "start": "node server.js",
     "demon": "nodemon server.js",
-    "build": "NODE_ENV=production webpack --config webpack.config.js",
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "prepublish": "npm run build"
   },
   "devDependencies": {
+    "babel-cli": "^6.8.0",
     "babel-core": "^6.7.3",
     "babel-loader": "^6.2.1",
     "babel-plugin-react-transform": "^2.0.0-beta1",

@@ -2,7 +2,7 @@
 Baisc React.js input password with cool features.
 
 ## How to
-1. Install with `npm install react-input-password`.
+1. Install with `npm install react-input-password --save`.
 2. import to your "js" file.
 3. See `example/basic.js` as reference.
 
