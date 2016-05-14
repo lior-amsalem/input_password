@@ -22,3 +22,9 @@ Baisc React.js input password with cool features.
 **Basic:**
 
 ![alt tag](examples/screenshot-basic.jpg)
+
+## Dev ENV
+1. Clone the project (`git clone url`).
+2. Run `npm install`.
+3. Run `npm start` (or better `npm run demon` in case you have `nodemon`).
+4. Go to `http://localhost:3334/` - GL HF!
