@@ -1,8 +1,8 @@
 {
   "name": "react-input-password",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "React Input Password with some cool features.",
-  "main": "index.js",
+  "main": "src/input_password.js",
   "author": "Lior Amsalem",
   "scripts": {
     "start": "node server.js",
@@ -34,5 +34,12 @@
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "svg-inline-react": "^1.0.1"
-  }
+  },
+  "keywords": [
+    "form",
+    "input",
+    "password",
+    "password input",
+    "smart password input"
+  ]
 }
