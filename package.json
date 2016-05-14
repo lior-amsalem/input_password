@@ -2,12 +2,13 @@
   "name": "react-input-password",
   "version": "1.0.2",
   "description": "React Input Password with some cool features.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Lior Amsalem",
   "scripts": {
     "start": "node server.js",
     "demon": "nodemon server.js",
-    "build": "NODE_ENV=production webpack --config webpack.config.js"
+    "build": "NODE_ENV=production webpack --config webpack.config.js",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-core": "^6.7.3",
