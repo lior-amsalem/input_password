@@ -2,7 +2,7 @@
   "name": "react-input-password",
   "version": "1.0.2",
   "description": "React Input Password with some cool features.",
-  "main": "src/input_password.js",
+  "main": "index.js",
   "author": "Lior Amsalem",
   "scripts": {
     "start": "node server.js",

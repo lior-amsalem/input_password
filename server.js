@@ -1,5 +1,5 @@
 var webpack = require('webpack'),
-	config  = require('./webpack.config.dev'),
+	config  = require('./webpack.config'),
 	path    = require('path'),
 	express = require('express'),
 	app      = express(),
