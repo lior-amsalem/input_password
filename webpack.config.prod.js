@@ -8,16 +8,13 @@ module.exports = {
     entry: {
         index: [
             './examples/basic',
-            hotMiddlewareEntry,
             'react',
             'react-dom'
         ]
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: '[name].js',
-        publicPath: localhost + '/',
-        port: 3334
+        filename: '[name].js'
     },
     module: {
         loaders: [{

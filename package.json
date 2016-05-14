@@ -6,7 +6,8 @@
   "author": "Lior Amsalem",
   "scripts": {
     "start": "node server.js",
-    "demon": "nodemon server.js"
+    "demon": "nodemon server.js",
+    "build": "NODE_ENV=production webpack --config webpack.config.js"
   },
   "devDependencies": {
     "babel-core": "^6.7.3",
