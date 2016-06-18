@@ -12,7 +12,9 @@
             "transform": "react-transform-catch-errors",
             "imports": ["react", "redbox-react"]
           }]
-        }]
+        }],
+        "add-module-exports",
+        "transform-es2015-modules-umd"
       ]
     }
   }
