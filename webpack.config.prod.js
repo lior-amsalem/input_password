@@ -2,14 +2,12 @@ var path = require('path');
     webpack = require('webpack');
 
 module.exports = {
-    devtool: 'cheap-module-eval-source-map',
     entry: {
         index: [
-            './src/input_password',
-            'react',
-            'react-dom'
+            './src/input_password'
         ]
     },
+    target: 'node',
     output: {
         path: path.join(__dirname, 'dist'),
         filename: '[name].js',
@@ -38,11 +36,14 @@ module.exports = {
             ]
         }]
     },
+    externals: {
+      'react': 'react',
+      'react-dom': 'react-dom'
+    },
     plugins: [
         new webpack.ProvidePlugin({
             React: 'react',
             ReactDOM: 'react-dom'
-        }),
-        new webpack.HotModuleReplacementPlugin(),
+        })
     ]
 };

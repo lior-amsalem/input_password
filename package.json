@@ -10,6 +10,14 @@
     "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "prepublish": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namshi/node-es6-seed.git"
+  },
+  "homepage": "https://github.com/lior-a/input_password",
+  "bugs": {
+    "url": "https://github.com/lior-a/input_password/issues"
+  },
   "devDependencies": {
     "babel-cli": "^6.8.0",
     "babel-core": "^6.7.3",
