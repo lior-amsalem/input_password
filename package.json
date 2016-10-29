@@ -1,6 +1,6 @@
 {
   "name": "react-input-password",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "React Input Password with some cool features.",
   "main": "dist/index.js",
   "author": "Lior Amsalem",
