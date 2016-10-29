@@ -1,10 +1,11 @@
 # Input Password
 Baisc React.js input password with cool features.
 
-## How to
+## How To Use
 1. Install with `npm install react-input-password --save`.
-2. import to your "js" file.
-3. See `example/basic.js` as reference.
+2. Import to your "js" file: `import Input from 'react-input-password';`.
+3. In your code, use like that: `<Input onChange={this.test}/>`.
+4. See `example/basic.js` as reference.
 
 ## Features
 1. Hide/Show password
@@ -23,8 +24,12 @@ Baisc React.js input password with cool features.
 
 ![alt tag](examples/screenshot-basic.jpg)
 
-## Dev ENV
-1. Clone the project (`git clone url`).
-2. Run `npm install`.
-3. Run `npm start` (or better `npm run demon` in case you have `nodemon`).
-4. Go to `http://localhost:3334/` - GL HF!
+## How to Contribute
+1. Fork the project (top right button, in github UI).
+2. Clone the forked repository to your machine.
+3. Run `npm install`.
+4. Run `npm start` (or better `npm run demon` in case you have `nodemon`, otherwise run `npm install nodemon -g`).
+5. Create a new branch.
+6. Go to `http://localhost:3334/`.
+7. Write your code, commit and push to your own forked repository in the new branch.
+8. Open a PR and wait for someone to review and merge to master.
