@@ -1,5 +1,6 @@
 var path = require('path');
-    webpack = require('webpack');
+    webpack = require('webpack'),
+    ExtractTextPlugin = require('extract-text-webpack-plugin');;
 
 module.exports = {
     entry: {
@@ -24,7 +25,10 @@ module.exports = {
             ]
         }, {
             test: /\.scss$/,
-            loader: "style-loader!raw-loader!sass-loader"
+            loader: ExtractTextPlugin.extract(
+                'style-loader', // is our "before"
+                ['raw-loader', 'sass-loader']
+            )
         }, {
             test: /\.svg$/,
             loader: 'svg-inline'
@@ -44,6 +48,14 @@ module.exports = {
         new webpack.ProvidePlugin({
             React: 'react',
             ReactDOM: 'react-dom'
+        }),
+        new ExtractTextPlugin('index.css'),
+        new webpack.optimize.UglifyJsPlugin({minimize: true}),
+        new webpack.optimize.OccurenceOrderPlugin(),
+        new webpack.DefinePlugin({
+            'process.env': {
+                 NODE_ENV: JSON.stringify('production')
+            }
         })
     ]
 };
