@@ -54,8 +54,5 @@
     "password",
     "password input",
     "smart password input"
-  ],
-  "files": [
-    "dist/*.css"
   ]
 }
